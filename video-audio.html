@@ -4,38 +4,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Audio - Video</title>
+        <style>
+            footer a{display: block;}
+            body{
+                display: grid;
+                grid-template-rows: 5fr 1fr;
+            }
+        </style>
     </head>
 
     <body>
-<!--
-        <video id="myVideo" width="480" controls>
-            <source src="river03.mp4" type="video/mp4">
-            <source src="river03.webm" type="video/webm">
-            <source src="river03.ogv" type="video/ogg">
-            Your browser doesn't support HTML5 video tag.
-        </video>
+        <main>
+            <!--
+<video id="myVideo" width="480" controls>
+<source src="river03.mp4" type="video/mp4">
+<source src="river03.webm" type="video/webm">
+<source src="river03.ogv" type="video/ogg">
+Your browser doesn't support HTML5 video tag.
+</video>
 
-        <br>
+<br>
 -->
-        <audio id="mySound" controls>
-            <source src="whispering.m4a" type="audio/mp4">
-            <source src="gong.mp3" type="audio/mpeg">
-            <source src="gong.ogg" type="audio/ogg">
-            <source src="gong.wav" type="audio/wav">
+            <audio id="mySound" controls>
+                <source src="whispering.m4a" type="audio/mp4">
+                <source src="gong.mp3" type="audio/mpeg">
+                <source src="gong.ogg" type="audio/ogg">
+                <source src="gong.wav" type="audio/wav">
 
-            Your browser doesn't support HTML5 audio tag.
-        </audio>
+                Your browser doesn't support HTML5 audio tag.
+            </audio>
 
-        <br>
+            <br>
 
-        <button id="play-btn">Play</button>
-        <button id="pause-btn">Pause</button>
-        <button id="stop-btn">Stop</button>
-        <button id="volume15-btn">15% volume</button>
-        <button id="volume100-btn">100% volume</button>
-        <br>
-        <hr>
+            <button id="play-btn">Play</button>
+            <button id="pause-btn">Pause</button>
+            <button id="stop-btn">Stop</button>
+            <button id="volume15-btn">15% volume</button>
+            <button id="volume100-btn">100% volume</button>
+            <br>
+            <hr>
+        </main>
+        <footer>
 
+            <a href="https://www.w3schools.com/tags/ref_av_dom.asp">https://www.w3schools.com/tags/ref_av_dom.asp</a>
+            <a href="https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/AudioandVideoTagBasics/AudioandVideoTagBasics.html#//apple_ref/doc/uid/TP40009523-CH2-SW10">https://developer.apple.com/library/content/documentation/AudioVideo/Conceptual/Using_HTML5_Audio_Video/AudioandVideoTagBasics/AudioandVideoTagBasics.html#//apple_ref/doc/uid/TP40009523-CH2-SW10</a>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio">https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio</a>
+            <a href="https://coolestguidesontheplanet.com/html-5-audio/">https://coolestguidesontheplanet.com/html-5-audio/</a>
+        </footer>
         <script src="javascript.js"></script>
     </body>
 </html>
