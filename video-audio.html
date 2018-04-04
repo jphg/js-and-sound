@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio - Video</title>
+        <style>
+            /*
+            #play-btn.green{
+                background-color: green;
+            }
+            #play-btn.red{
+                background-color: red;
+            }
+            */
+            hr{
+                width: 0;
+                transition: width 1s linear;
+            }
+            .grow{
+                width: 100vw;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <video id="myVideo" width="480" controls>
+            <source src="river03.mp4" type="video/mp4">
+            <source src="river03.webm" type="video/webm">
+            <source src="river03.ogv" type="video/ogg">
+            Your browser doesn't support HTML5 video tag.
+        </video>
+
+        <br>
+
+        <audio id="mySound" controls>
+            <source src="whispering.m4a" type="audio/mp4">
+            <source src="gong.mp3" type="audio/mpeg">
+            <source src="gong.ogg" type="audio/ogg">
+            <source src="gong.wav" type="audio/wav">
+
+            Your browser doesn't support HTML5 audio tag.
+        </audio>
+
+        <br>
+
+        <button id="play-btn" class="green">Play</button>
+        <button id="pause-btn">Pause</button>
+        <button id="stop-btn">Stop</button>
+        <br>
+        <hr>
+
+        <script src="javascript.js"></script>
+    </body>
+</html>
