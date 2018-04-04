@@ -1,0 +1,15 @@
+
+#play-btn.green{
+    background-color: green;
+}
+#play-btn.red{
+    background-color: red;
+}
+
+hr{
+    width: 0;
+    transition: width 1s linear;
+}
+.grow{
+    width: 100vw;
+}
