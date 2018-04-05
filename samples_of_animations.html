@@ -5,13 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>samples of animations</title>
         <style>
-            div{margin: 1em;}
-            #man{height: 400px; width: auto; position: relative;}
-            #man img{position: absolute; bottom: 0;}
+
+            #man{position: relative; top: 400px;}
 
             .jump{
                 animation: jump 1s alternate infinite;
             }
+
             @keyframes jump{
                 to{
                     transform: translateY(-200px);
@@ -22,9 +22,9 @@
     </head>
 
     <body>
-        <div id="man">
-            <img src="man.png" alt="man">
-        </div>
+
+        <img src="man.png" alt="man" id="man">
+
         <div>
             <button id="btn1">jump</button>
             <button id="btn2">rotate</button>
@@ -32,7 +32,7 @@
 
         <script>
             let btn1=document.querySelector("#btn1");
-            let man=document.querySelector("#man img");
+            let man=document.querySelector("#man");
             btn1.addEventListener("click", jump);
 
             function jump(){
